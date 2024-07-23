@@ -18,7 +18,8 @@
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         font-family: "New Font style sets";
         font-size: 100px;
@@ -99,6 +100,11 @@
           var(--new-font-regular-ss06), var(--new-font-regular-ss07),
           var(--new-font-regular-ss08), var(--new-font-regular-ss09);
       }
+
+      .muted {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+      }
     </style>
     <script>
 window.onload = function() {
@@ -122,6 +128,7 @@ window.onload = function() {
   <body>
     <div class="container">
       <div id="text"></div>
+      <span class="muted">Обновите страницу для <i>разнообразия</i></span>
     </div>
   </body>
 </html>
